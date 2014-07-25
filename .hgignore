@@ -1,0 +1,9 @@
+syntax:glob
+dist
+*.pyc
+*~
+MANIFEST
+*.sublime*
+bw2speedups.egg-info
+*.orig
+*.patch
