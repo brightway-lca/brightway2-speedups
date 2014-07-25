@@ -1,9 +1,10 @@
 syntax:glob
-dist
-*.pyc
-*~
-MANIFEST
-*.sublime*
-bw2speedups.egg-info
 *.orig
 *.patch
+*.pyc
+*.sublime*
+*~
+build
+bw2speedups.egg-info
+dist
+MANIFEST
