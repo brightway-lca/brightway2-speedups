@@ -5,6 +5,11 @@ cimport cython
 DTYPE = np.float64
 ctypedef np.float64_t DTYPE_t
 
+try:
+    _range = xrange
+except NameError:
+    _range = range
+
 
 @cython.boundscheck(False)
 def consolidate(np.ndarray[DTYPE_t, ndim=1] a,
@@ -41,7 +46,7 @@ def consolidate(np.ndarray[DTYPE_t, ndim=1] a,
     cdef np.ndarray[np.float64_t, ndim=1] d = \
             np.zeros(new_shape, dtype=np.float64)
 
-    for index in range(new_shape):
+    for index in _range(new_shape):
         c[index] = index_values[index]
         d[index] = b.take(np.where(a == index_values[index])).sum()
 

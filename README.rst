@@ -18,8 +18,12 @@ Although you can do this inplace, in my experience it is easier to just install 
 Testing
 -------
 
-Install the library into a temporary environment, then manually run the separate test files, i.e. ``python bw2speedupds/test/test_consolidate.py``. This isn't the most elegant, but
+Install the library into a temporary environment, then manually run the separate test files, i.e. ``python bw2speedupds/test/test_consolidate.py``. This isn't the most elegant, but it will do for now.
 
 Building wheels
 ---------------
 
+pip install wheel
+python setup.py bdist_wheel
+
+Note that this has to be done separately for each OS and environment, i.e. Windows 32-bit and 64-bit versions of Python are separate wheels, even with the same version of Windows.
