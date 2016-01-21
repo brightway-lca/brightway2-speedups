@@ -1,7 +1,7 @@
 Brightway2 speedups
 ===================
 
-A series of function written in `Cython <http://cython.org/>`__ that speed up critical functions to improve the overall performance of the `Brightway2 life cycle assessment framework <http://brightway2.readthedocs.org/en/latest/>`__.
+A series of function written in `Cython <http://cython.org/>`__ that speed up critical functions to improve the overall performance of the `Brightway2 life cycle assessment framework <https://brightwaylca.org>`__.
 
 In order to avoid having to have Cython as a dependency, this library includes both the ``pyx`` and Cython-generated ``c`` code, and is distributed as pre-compiled `wheels <https://pypi.python.org/pypi/wheel>`__, except on Linux where access to a ``C`` compiler is assumed.
 
