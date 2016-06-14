@@ -42,6 +42,7 @@ install:
   # Check that we have the expected version and architecture for Python
   - "python --version"
   - "python -c \"import struct; print(struct.calcsize('P') * 8)\""
+  - "python -c \"import numpy; from __future__ import print; print(numpy.__version__)\""
 
 build: false
 
@@ -49,7 +50,7 @@ test_script:
   - "echo Skipped Tests"
 
 after_test:
-  - "%PYTHON%\\python.exe setup.py bdist_wheel"
+  - "python setup.py bdist_wheel"
 
 artifacts:
   # bdist_wheel puts your built wheel in the dist directory
