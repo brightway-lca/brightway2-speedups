@@ -36,7 +36,7 @@ if __name__ == "__main__":
         install_requires=['numpy'],
         name = 'bw2speedups',
         packages=[SRC_DIR],
-        version="2.2.1",
+        version="2.3",
         zip_safe=False,
         classifiers=[
             'Development Status :: 5 - Production/Stable',
