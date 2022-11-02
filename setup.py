@@ -29,7 +29,7 @@ if __name__ == "__main__":
         # install_requires=['numpy', 'cython'],
         author="Chris Mutel",
         author_email="cmutel@gmail.com",
-        url="https://bitbucket.org/cmutel/brightway2-speedups/",
+        url="https://github.com/brightway-lca/brightway2-speedups",
         description="""Cython functions to speed up Brightway2 LCA calculations""",
         long_description=open('README.md').read(),
         ext_modules = [extension_1, extension_2, extension_3],
@@ -46,8 +46,6 @@ if __name__ == "__main__":
             'Operating System :: Microsoft :: Windows',
             'Operating System :: POSIX',
             'Programming Language :: Python',
-            'Programming Language :: Python :: 2.7',
-            'Programming Language :: Python :: 3.3',
-            'Programming Language :: Python :: 3.4',
+            'Programming Language :: Python :: 3',
         ],
     )
