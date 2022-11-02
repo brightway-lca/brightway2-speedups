@@ -6,7 +6,7 @@ jobs:
   build_wheels:
     name: Build wheels on ${{ matrix.os }}
     env:
-      CIBW_BEFORE_BUILD: pip install Cython
+      CIBW_BEFORE_BUILD: pip install Cython numpy
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
