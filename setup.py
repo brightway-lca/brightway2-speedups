@@ -33,10 +33,10 @@ if __name__ == "__main__":
         description="""Cython functions to speed up Brightway2 LCA calculations""",
         long_description=open('README.md').read(),
         ext_modules = [extension_1, extension_2, extension_3],
-        install_requires=['numpy'],
+        install_requires=['numpy<2'],
         name = 'bw2speedups',
         packages=[SRC_DIR],
-        version="2.4",
+        version="2.5",
         zip_safe=False,
         classifiers=[
             'Development Status :: 5 - Production/Stable',
